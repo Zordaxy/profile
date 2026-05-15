@@ -486,7 +486,8 @@ function Footer() {
     <footer className="border-t border-rule py-10 mt-8">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs font-mono text-muted">
         <span>
-          Built in Denver. <span aria-hidden>🇺🇦</span>
+          Built in Denver, by way of Khmelnytsky{" "}
+          <span aria-hidden>🇺🇦</span>.
         </span>
         <span>Last updated May 2026.</span>
       </div>
