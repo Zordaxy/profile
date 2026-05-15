@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 const DURATION_MS = 800;
 
@@ -12,9 +12,9 @@ function parseMetric(value: string): { prefix: string; target: number; suffix: s
 }
 
 export function MetricNumber({ value }: { value: string }) {
-  const parsed = parseMetric(value);
+  const parsed = useMemo(() => parseMetric(value), [value]);
   const ref = useRef<HTMLSpanElement>(null);
-  const [displayed, setDisplayed] = useState(parsed ? 0 : null);
+  const [displayed, setDisplayed] = useState(0);
 
   useEffect(() => {
     if (!parsed) return;
@@ -64,7 +64,7 @@ export function MetricNumber({ value }: { value: string }) {
   return (
     <span ref={ref} className="tabular-nums">
       {parsed.prefix}
-      {displayed ?? 0}
+      {displayed}
       {parsed.suffix}
     </span>
   );

@@ -98,10 +98,10 @@ const skillGroups: SkillGroup[] = [
 const photos = [
   {
     src: "/photos/colorado-mtb.jpg",
-    alt: "Mountain biker airborne over dusty backcountry terrain at golden hour",
+    alt: "Mountain biker descending a forest trail through tall pines",
     caption: "Colorado · summer",
     width: 1600,
-    height: 1067,
+    height: 1061,
   },
   {
     src: "/photos/colorado-ski.jpg",
