@@ -18,7 +18,7 @@ export default function Home() {
             GitHub
           </a>
           <a
-            href="https://www.linkedin.com/in/alex-vovchuk/"
+            href="https://www.linkedin.com/in/alexvovchuk/"
             className="text-zinc-900 dark:text-zinc-50 underline underline-offset-4 hover:no-underline"
             target="_blank"
             rel="noopener noreferrer"
