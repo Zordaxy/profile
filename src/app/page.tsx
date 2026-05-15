@@ -98,10 +98,10 @@ const skillGroups: SkillGroup[] = [
 const photos = [
   {
     src: "/photos/colorado-mtb.jpg",
-    alt: "Mountain biker carving a corner through an autumn forest trail",
+    alt: "Mountain biker in full-face helmet riding a forest trail toward camera",
     caption: "Colorado · summer",
     width: 1600,
-    height: 1066,
+    height: 2400,
   },
   {
     src: "/photos/colorado-ski.jpg",
@@ -111,9 +111,9 @@ const photos = [
     height: 1068,
   },
   {
-    src: "/photos/la-sailing.jpg",
-    alt: "Sailboat on the water near Los Angeles",
-    caption: "Los Angeles · when the wind cooperates",
+    src: "/photos/sf-sailing.jpg",
+    alt: "Sailboat on the water near San Francisco",
+    caption: "San Francisco · when the wind cooperates",
     width: 1600,
     height: 1143,
   },
@@ -420,7 +420,7 @@ function Outside() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 mb-8">
         <SectionLabel>Outside</SectionLabel>
         <p className="md:col-span-9 text-base text-muted max-w-xl">
-          Colorado, mostly. Sometimes Los Angeles when the wind cooperates.
+          Colorado, mostly. Sometimes San Francisco when the wind cooperates.
         </p>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5">
