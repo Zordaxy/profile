@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { MetricNumber } from "@/components/MetricNumber";
 
 type Project = {
   title: string;
@@ -235,7 +237,7 @@ function SelectedWork() {
             {p.metric && (
               <div className="mt-5 flex items-baseline gap-3">
                 <span className="font-mono text-3xl sm:text-4xl text-accent tracking-tight">
-                  {p.metric.value}
+                  <MetricNumber value={p.metric.value} />
                 </span>
                 <span className="text-sm text-muted">{p.metric.label}</span>
               </div>
@@ -486,10 +488,18 @@ function Footer() {
     <footer className="border-t border-rule py-10 mt-8">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs font-mono text-muted">
         <span>
-          Built in Denver, by way of Khmelnytsky{" "}
+          Built in Denver, with heart in Ukraine{" "}
           <span aria-hidden>🇺🇦</span>.
         </span>
-        <span>Last updated May 2026.</span>
+        <span>
+          <Link
+            href="/now"
+            className="border-b border-accent/40 hover:border-accent transition-colors"
+          >
+            /now
+          </Link>
+          {" · "}Last updated May 2026.
+        </span>
       </div>
     </footer>
   );
